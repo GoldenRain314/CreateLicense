@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="339.0" prefWidth="554.0">
+         <children>
+            <TextField fx:id="userId" layoutX="162.0" layoutY="77.0" prefHeight="22.0" prefWidth="273.0" />
+            <TextField fx:id="license" layoutX="162.0" layoutY="224.0" prefHeight="22.0" prefWidth="273.0" />
+            <Label layoutX="89.0" layoutY="78.0" text="用户码" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="226.0" text="注册码">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="457.0" layoutY="149.0" mnemonicParsing="false" onAction="#createLicense" text="生成注册码" />
+            <TextField fx:id="date" layoutX="162.0" layoutY="148.0" prefHeight="22.0" prefWidth="164.0" />
+            <Label layoutX="89.0" layoutY="150.0" text="过期时间">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="151.0" prefHeight="17.0" prefWidth="100.0" text="(示例：20180808)">
+               <font>
+                  <Font name="Symbol" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="userIdTips" layoutX="162.0" layoutY="109.0" prefHeight="14.0" prefWidth="273.0" textFill="brown"/>
+            <Label fx:id="dateTips" layoutX="162.0" layoutY="179.0" prefHeight="14.0" prefWidth="164.0" textFill="brown"/>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
